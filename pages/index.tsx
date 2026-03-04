@@ -5,11 +5,12 @@
 
 import Head from 'next/head';
 import Navbar from '../componentes/Navbar';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Image from 'next/image';
 
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -28,7 +29,7 @@ export default function Home() {
             lógica asociada. */}
         <div className="hero-owl-background">
           <img
-            src="/images/Buho.png"
+            src={`${router.basePath}/images/Buho.png`}
             alt="Búho Tuttor-Up"
             className="hero-owl-img-home"
           />

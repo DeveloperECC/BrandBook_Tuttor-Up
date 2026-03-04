@@ -6,8 +6,10 @@
 
 import Head from 'next/head';
 import Navbar from '../componentes/Navbar';
+import { useRouter } from 'next/router';
 
 export default function BrandBook() {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -29,7 +31,7 @@ export default function BrandBook() {
             pequeño margen para evitar que el contenido quede cortado en
             móviles con barra de estado. */}
         <iframe
-          src="BrandBook-original.html"
+          src={`${router.basePath}/BrandBook-original.html`}
           style={{
             width: '100%',
             height: '100vh',

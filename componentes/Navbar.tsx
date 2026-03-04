@@ -58,7 +58,7 @@ export default function Navbar() {
       <nav className={"c-menu" + (open ? ' open' : '')} aria-label="Menú principal">
         <div className="brand-area">
           <div className="owl-wrap">
-            <img src="/images/Buho.png" alt="Búho Tuttor-Up" className="owl-img" />
+            <img src={`${router.basePath}/images/Buho.png`} alt="Búho Tuttor-Up" className="owl-img" />
           </div>
           <span className="brand-logo">Tuttor‑Up</span>
         </div>
