@@ -565,7 +565,7 @@
       overflow: hidden;
     }
     .logo-display::before {
-      content: '🦉';
+      content: url("/images/Buho-Logo.png");
       position: absolute;
       font-size: 18rem;
       opacity: 0.05;
